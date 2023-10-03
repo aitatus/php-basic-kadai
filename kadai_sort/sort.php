@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta name="description" content="このページは14章の課題です。">
     <title>14章課題</title>
-    <style>
-        p {
-            margin: 0;
-        }
-    </style>
 </head>
 
 <body>
-    <p>昇順にソートします。</p>
     <p>
         <?php
-            $num = [15, 4, 18, 23, 10];
-            sort($num, SORT_NUMERIC);
-            foreach ($num as $n) {
-                echo $n.'<br>';
+            function sort_2way($array, $order) {
+                if ($order == true) {
+                    echo '昇順にソートします。<br>';
+                    sort($array, SORT_NUMERIC);
+                    foreach ($array as $a) {
+                        echo $a.'<br>';
+                    }
+                } else {
+                    if ($order == false) {
+                        echo '降順にソートします。<br>';
+                        arsort($array, SORT_NUMERIC);
+                        foreach ($array as $a) {
+                            echo $a.'<br>';
+                        }
+                    }
+                }
             }
-        ?>
-    </p>
-    <p>降順にソートします。</p>
-    <p>
-        <?php
-            $num = [15, 4, 18, 23, 10];
-            arsort($num, SORT_NUMERIC);
-            foreach($num as $n) {
-                echo $n.'<br>';
-            }
+            $array = [15, 4, 18, 23, 10];
+            sort_2way($array, true);
+            sort_2way($array, false);
         ?>
     </p>
 </body>
