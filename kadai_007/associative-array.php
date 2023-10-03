@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>PHP基礎編</title>
+    <title>課題007</title>
 </head>
 <body>
     <p>
