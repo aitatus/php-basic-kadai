@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>課題005</title>
+    <meta name="description" content="このページは5章の課題です。">
+    <title>5章課題</title>
 </head>
 <body>
     <p>
